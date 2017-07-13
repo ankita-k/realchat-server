@@ -88,7 +88,9 @@ class Routes{
 				});
 	        }
 		});
- 
+		this.app.get('/test',(req,res)=>{
+			res.send('reached');
+		})
 		this.app.post('/login',(request,response) =>{
  
 			const data = {
